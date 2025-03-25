@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+}
+
+header {
+    margin: auto;    
+    background-color: #d3480c;
+    padding: 10px;
+    border: 10px solid #d3480c;
+    nav{
+        float: right;
+        ul{
+            list-style-type: none;
+            li{
+                display: inline;
+                font-family: 'Roboto', sans-serif;
+                text-transform: uppercase;
+                margin-right: 25px;
+                    a{
+                    color: rgb(34, 34, 34);
+                    text-decoration: none;
+                    transition: cubic-bezier(0.075, 0.82, 0.165, 1)                
+                }
+            }
+        }
+    }
+    
+}
+
+.HOME img{
+    display: inline;
+    width: 70px;
+}
+body{
+    background-image: url("../Imagem/Bannersun.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    p{
+        color: white;
+        font-size: 30px;
+        text-align: center;}
+    h1{
+        color: white;
+        font-size: 30px;
+        text-align: center;
+    }
+
+         
+}
+
+
+    
+
+
