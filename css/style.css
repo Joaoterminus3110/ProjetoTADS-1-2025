@@ -1,77 +1,100 @@
 * {
     margin: 0;
+    padding: 0;
 }
 
 header {
-    margin: auto;    
+    margin: auto;
     background-color: whitesmoke;
     padding: 10px;
-    nav{
-        float: right;
-        ul{
+
+    nav {
+        display: flex;
+        float: inline-end;
+
+        ul {
             list-style-type: none;
-            li{
+
+            li {
                 display: inline;
                 font-family: "Roboto", sans-serif;
                 text-transform: uppercase;
                 margin-right: 25px;
-                    a{
-                    color: rgb(9, 9, 9);
+
+                a {
+                    color: rgb(23, 21, 21);
                     text-decoration: none;
-                    transition: cubic-bezier(0.075, 0.82, 0.165, 1)                
+                    transition: cubic-bezier(0.075, 0.82, 0.165, 1)
                 }
             }
         }
     }
-    
+
 }
 
-
-
-body{
+body {
     background-image: url("../Imagem/Bannersun.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-    p{
-        color: white;
-        font-size: 30px;
-        text-align: center; 
-        padding: 20px;
-        border-radius: 20px; 
-        
-        }
-        #Sobre{
-            color: white;
-            font-size: 30px;
-            text-align: center;
-            padding: 20px;
-            border-radius: 10%;
-        }
-        .SAIBA{
-            background-color: rgb(248, 17, 17);
-            color: white;
-            border-radius: 10%;
-        }
-        .capaImagem img{
-            width: 100px;
-            height: 60px;
-            display: inline;
-        }
-        .capaImagem{
-            p{
-             text-align: center;
-             background-color: black;
-            text-decoration-line: overline;
-        
-            }
-        }
-            .HOME img{
-                width: 100px;
-                height: 100px;
-                display: inline;
-            }  
-        
-    
+p {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+#Sobre {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10%;
+}
+
+.SAIBA {
+    background-color: rgb(248, 17, 17);
+    color: white;
+    border-radius: 10%;
+}
+
+.capaImagem img {
+    width: 100px;
+    height: 60px;
+    display: inline;
+}
+
+.capaImagem {
+    p {
+        text-align: center;
+        background-color: #ede6e6;
+        text-decoration-line: overline;
+
+    }
+}
+
+.HOME img {
+    width: 10%;
+    height: 10%;
+    display: inline;
+}
+body{
+    margin: 0;
+}
+
+footer {
+    background-color: whitesmoke;
+    padding: 10px;
+    p {
+        color: hsl(0, 3%, 6%);
+         text-align: center;
+    }
+    .FINAL img {
+        width: 10%;
+        display: inline;
+    }
+}
