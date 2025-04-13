@@ -186,9 +186,9 @@ h2 {
 }
 .fase11 {
 display: inline;
-width: 600px;
+width: 450px;
 margin:auto;
-height: 600px;
+height: 450px;
 border-style: solid;
 }
 .fase12 {
@@ -197,3 +197,65 @@ width: 450px;
 margin:auto;
 height: 450px;
 border-style: solid;}
+.fase21 {
+    display: inline;
+    width: 450px;
+    margin:auto;
+    height: 450px;
+    border-style: solid;
+}
+.fase22 {
+        display: inline;
+        width: 450px;
+        margin:auto;
+        height: 450px;
+        border-style: solid;
+    }
+    .vilao {
+        display: inline;
+        width: 450px;
+        margin:auto;
+        height: 450px;
+        border-style: solid;
+    }
+    .jogador {
+        display: inline;
+        width: 450px;
+        margin:auto;
+        height: 450px;
+        border-style: solid;
+    }
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .faixa {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  iframe {
+    width: 100%;
+    max-width: 960px;
+    height: 600px;
+    margin: 20px 0;
+    border: none;
+  }
+  
+  .center .btn {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 5px;
+  }
