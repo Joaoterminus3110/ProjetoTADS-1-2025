@@ -9,31 +9,37 @@ header {
     background-color: whitesmoke;
     padding: 10px;
     color: black;
+    display: flex;
+    justify-content: space-between; /* separa o logo da nav */
+    align-items: center; /* alinha verticalmente */
+}
 
-    a{
-        text-decoration: none;
-        color: black;
-    }
-    nav {
-        display: flex;
+header a {
+    text-decoration: none;
+    color: black;
+}
 
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
 
-        ul {
-            list-style-type: none;
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
 
-            li {
-                display: inline;
-                font-family: "Roboto", sans-serif;
-                text-transform: uppercase;
-                margin-right: 25px;
-                color: black;
+nav ul li {
+    display: inline;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    color: black;
+}
 
-                
-
-                }
-            }
-        }
-    }
 
 
 

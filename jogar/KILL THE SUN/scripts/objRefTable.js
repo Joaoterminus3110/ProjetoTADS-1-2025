@@ -80,6 +80,11 @@ self.C3_JsPropNameTable = [
 	{Cronômetro: 0},
 	{timer: 0},
 	{PLANODEFUNDOFASE2: 0},
+	{PlanoDeFundoEmBlocos5: 0},
+	{FonteDeSprites2: 0},
+	{FonteDeSprites3: 0},
+	{Texto: 0},
+	{Texto2: 0},
 	{Luzdestruida: 0}
 ];
 
@@ -122,5 +127,10 @@ self.InstanceType = {
 	Sprite17: class extends self.ISpriteInstance {},
 	Sprite11: class extends self.ISpriteInstance {},
 	timer: class extends self.ISpriteInstance {},
-	PLANODEFUNDOFASE2: class extends self.ITiledBackgroundInstance {}
+	PLANODEFUNDOFASE2: class extends self.ITiledBackgroundInstance {},
+	PlanoDeFundoEmBlocos5: class extends self.ITiledBackgroundInstance {},
+	FonteDeSprites2: class extends self.ISpriteFontInstance {},
+	FonteDeSprites3: class extends self.ISpriteFontInstance {},
+	Texto: class extends self.ITextInstance {},
+	Texto2: class extends self.ITextInstance {}
 }

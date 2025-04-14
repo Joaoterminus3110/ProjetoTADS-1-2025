@@ -11,7 +11,7 @@ const scriptsInEvents = {
 
 	async FolhaDeEventoFase2_Event5_Act3(runtime, localVars)
 	{
-		if(runtime.globalVars.ESPADA == 3){
+		if(runtime.globalVars.ESPADA >= 3){
 			runtime.goToLayout("FASE DO GANHADOR"
 			);
 		}
