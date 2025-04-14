@@ -10,8 +10,8 @@ header {
     padding: 10px;
     color: black;
     display: flex;
-    justify-content: space-between; /* separa o logo da nav */
-    align-items: center; /* alinha verticalmente */
+    justify-content: space-between;
+    align-items: center; 
 }
 
 header a {
