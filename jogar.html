@@ -14,7 +14,9 @@
             <img src="Imagem/soldorock-removebg-preview.png" alt=Logo da KILL THE SUN>
         </a>
         <nav>
-            <ul>
+        </a>
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+            <ul id="menu" class="menu">
                 <li>
                     <a href="index.html" title="Home">
                         HOME
@@ -61,6 +63,12 @@
         </p>
     </footer>
 </main>
+<script>
+    document.getElementById("menu-toggle").addEventListener("click", function () {
+document.getElementById("menu").classList.toggle("active");
+});
+
+</script>
 </body>
 
 </html>

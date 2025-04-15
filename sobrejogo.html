@@ -13,8 +13,10 @@
         <a href="index.html" class="HOME">
             <img src="Imagem/soldorock-removebg-preview.png" alt=Logo da KILL THE SUN>
         </a>
+    </a>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
         <nav>
-            <ul>
+            <ul id="menu" class="menu">
                 <li>
                     <a href="index.html" title="Home">
                         HOME
@@ -57,12 +59,6 @@
             </p>
             <p>
                 Na segunda fase, o desafio do protagonista é Buscar reunir fragmentos de sua espada antes do tempo acabar para conseguir Capturar o espectro e o trazer paz aos moradores    </p>
-            <script>
-                window.scrollTo(0, document.body.scrollHeight); document.getElementById("menu-toggle").addEventListener("click", function () {
-                    document.getElementById("menu").classList.toggle("active");
-                });
-
-            </script>
             <footer>
                 <img src="Imagem/soldorock2.png" alt="Solpagina" class="SIRIUS">
                 <p>
@@ -70,6 +66,11 @@
                 </p>
             </footer>
     </main>
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function () {
+           document.getElementById("menu").classList.toggle("active");
+           });
+    </script>
 </body>
 
 </html>

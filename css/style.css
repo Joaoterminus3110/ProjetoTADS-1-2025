@@ -2,92 +2,91 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-header {
-    margin: auto;
+  }
+  
+  body {
+    margin: 0;
+    overflow-x: hidden;
+    background-image: url("../Imagem/Bannersun.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  header {
     background-color: whitesmoke;
     padding: 10px;
     color: black;
     display: flex;
     justify-content: space-between;
-    align-items: center; 
-}
-
-header a {
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  header a {
     text-decoration: none;
     color: black;
-}
-
-nav {
+  }
+  
+  .HOME img {
+    width: 120px;
+    height: auto;
+  }
+  
+  nav {
     display: flex;
     justify-content: flex-end;
     width: 100%;
-}
-
-nav ul {
-    list-style-type: none;
+  }
+  
+  nav ul {
+    list-style: none;
     display: flex;
     gap: 25px;
-    margin: 0;
+    flex-wrap: wrap;
     padding: 0;
-}
-
-nav ul li {
-    display: inline;
+    margin: 0;
+  }
+  
+  nav ul li {
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
-    color: black;
-}
-
-
-
-
-body {
-    background-image: url("../Imagem/Bannersun.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.SOLVERM{
-    width: 250px;
-    height: 250px;
-    display: inline;
-}
-
-p {
-    color: white;
+  }
+  
+  .menu-toggle {
     font-size: 30px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  h1, h2 {
     text-align: center;
+    color: white;
+    text-decoration: underline;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+  
+  .paroalto {
+    text-align: center;
+    color: white;
     padding: 20px;
+  }
+  
+  p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-
-
-.capaImagem{
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    
-    p {
-        text-align: center;
-        background-color: #ede6e6;
-        text-decoration-line: overline;
-
-    }
-}
-
-.HOME img {
-    width: 120px;
-    height: 70px;
-    display: inline;
-}
-
-body {
-    margin: 0;
-}
-
-footer {
+  }
+  footer {
     background-color: whitesmoke;
     padding: 10px;
     margin: 0;
@@ -106,26 +105,45 @@ footer {
 
     }
 }
-
-.paroalto {
-
-    text-align: center;
-    color: rgb(255, 254, 254);
-    font-size: 15px;
-}
-
-h1 {
-    text-decoration: underline;
-}
-
-h2 {
-    text-decoration: underline;
-    font-size: 30px;
-    text-align: center;
-    color: white;
-}
-
-.paroalto2 {
+  @media (max-width: 768px) {
+    nav ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #333;
+    }
+  
+    nav ul.active {
+      display: flex;
+    }
+  
+    nav ul li a {
+      color: white;
+      padding: 10px;
+      display: block;
+    }
+  
+    .menu-toggle {
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 1000;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    h2 {
+      font-size: 18px;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+  }
+  .paroalto2 {
     text-align: center;
     color: white;
 }
@@ -134,46 +152,7 @@ h2 {
     margin-bottom: 50px;
     margin-top: 50px;
 }
-
-.menu {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.menu li a {
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.menu-toggle {
-    font-size: 30px;
-    cursor: pointer;
-    display: none;
-}
-
-@media (max-width: 768px) {
-
-    .menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: #333;
-        padding: 10px;
-    }
-
-    .menu.active {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-}
-.contato {
+.contato{
     form {
         max-width: 500px;
         margin: auto;
@@ -194,79 +173,88 @@ h2 {
         border: none;
         cursor: pointer;
       }
-}
-.fase11 {
-display: inline;
-width: 450px;
-margin:auto;
-height: 450px;
-border-style: solid;
-}
-.fase12 {
-display: inline;
-width: 450px;
-margin:auto;
-height: 450px;
-border-style: solid;}
-.fase21 {
-    display: inline;
-    width: 450px;
-    margin:auto;
-    height: 450px;
-    border-style: solid;
-}
-.fase22 {
+      }
+      .fase11 {
         display: inline;
         width: 450px;
         margin:auto;
         height: 450px;
         border-style: solid;
-    }
-    .vilao {
+        }
+        .fase12 {
         display: inline;
         width: 450px;
         margin:auto;
         height: 450px;
-        border-style: solid;
-    }
-    .jogador {
-        display: inline;
-        width: 450px;
-        margin:auto;
-        height: 450px;
-        border-style: solid;
-    }
-
-.container {
-    max-width: 1000px;
-    margin: auto;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .faixa {
-    font-size: 24px;
-    font-weight: bold;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: inline-block;
-    margin-bottom: 20px;
-  }
-  
-  iframe {
-    width: 100%;
-    max-width: 960px;
-    height: 600px;
-    margin: 20px 0;
-    border: none;
-  }
-  
-  .center .btn {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 5px;
-    display: inline-block;
-    border-radius: 5px;
-  }
+        border-style: solid;}
+        .fase21 {
+            display: inline;
+            width: 450px;
+            margin:auto;
+            height: 450px;
+            border-style: solid;
+        }
+        .fase22 {
+                display: inline;
+                width: 450px;
+                margin:auto;
+                height: 450px;
+                border-style: solid;
+            }
+            .vilao {
+                display: inline;
+                width: 450px;
+                margin:auto;
+                height: 450px;
+                border-style: solid;
+            }
+            .jogador {
+                display: inline;
+                width: 450px;
+                margin:auto;
+                height: 450px;
+                border-style: solid;
+            }
+            .container {
+                max-width: 1000px;
+                margin: auto;
+                text-align: center;
+                padding: 20px;
+              }
+              
+              .faixa {
+                font-size: 24px;
+                font-weight: bold;
+                color: #fff;
+                padding: 10px 20px;
+                border-radius: 5px;
+                display: inline-block;
+                margin-bottom: 20px;
+              }
+              
+              iframe {
+                width: 100%;
+                max-width: 960px;
+                height: 600px;
+                margin: 20px 0;
+                border: none;
+              }
+              
+              .center .btn {
+                color: white;
+                text-decoration: none;
+                padding: 10px 20px;
+                margin: 5px;
+                display: inline-block;
+                border-radius: 5px;
+              }
+              .SOLVERM{
+                width: 250px;
+                height: 250px;
+                display: inline;}
+                .capaimagem {
+                  width: 250px;
+                  height: 250px;
+                  display: block;
+                  margin: 0 auto;
+              }
