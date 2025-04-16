@@ -116,7 +116,7 @@
       display: flex;
     }
   
-    nav ul li a {
+    nav ul  a {
       color: white;
       padding: 10px;
       display: block;
@@ -175,41 +175,41 @@
       }
       .fase11 {
         display: inline;
-        width: 375px;
+        width: 360px;
         margin:auto;
         height: 450px;
         border-style: solid;
         }
         .fase12 {
         display: inline;
-        width: 375px;
+        width: 360px;
         margin:auto;
         height: 450px;
         border-style: solid;}
         .fase21 {
             display: inline;
-            width: 375px;
+            width: 360px;
             margin:auto;
             height: 450px;
             border-style: solid;
         }
         .fase22 {
                 display: inline;
-                width: 375px;
+                width: 360px;
                 margin:auto;
                 height: 450px;
                 border-style: solid;
             }
             .vilao {
                 display: inline;
-                width: 375px;
+                width: 360px;
                 margin:auto;
                 height: 450px;
                 border-style: solid;
             }
             .jogador {
                 display: inline;
-                width: 375px;
+                width: 360px;
                 margin:auto;
                 height: 450px;
                 border-style: solid;
