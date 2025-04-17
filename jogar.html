@@ -1,75 +1,83 @@
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KILL THE SUN</title>
-    <link href="Imagem/icono_assustado.png" rel="icon">
-    <link href="css/style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KILL THE SUN</title>
+  <link href="Imagem/icono_assustado.png" rel="icon">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <a href="index.html" class="HOME">
-            <img src="Imagem/soldorock-removebg-preview.png" alt=Logo da KILL THE SUN>
-        </a>
-        <nav>
-        </a>
-        <div class="menu-toggle" id="menu-toggle">☰</div>
-            <ul id="menu" class="menu">
-                <li>
-                    <a href="index.html" title="Home">
-                        HOME
-                    </a>
-                <li>
-                    <a href="sobrejogo.html" title="Sobre">SOBRE</a>
-                <li>
-                    <a href="galeriadejogos.html" title="Galeria de fotos">
-                        GALERIA DE JOGOS
-                    </a>
-                </li>
-                <a  href="contato.html" title="Contato">
-                    CONTATO
-                </a>
-                <li>
-                    <a  href="jogar.html"title="Jogar">
-                        JOGAR
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="sobre">
-          <div class="container">
-            <h1>
-              <span class="faixa">
-                <i class="fas fa-play"></i>
-                JOGAR KILL THE SUN
-              </span>
-            </h1>
-            <iframe src="jogo/KILLBETA7/index.html" height="300" width="300" style="border: none;"></iframe>
-            <p class="center">
-              <a href="KILLBETA7.zip" class="btn">⬇ Baixar jogo</a>
-              <a href="jogo/KILLBETA7/index.html"title="Abrir em Nova Aba" class="btn">▶ Abrir</a>
-            </p>
-          </div>
-        </section>
-      </main>
-      <footer>
-        <img src="Imagem/soldorock2.png" alt="Solpagina" class="SIRIUS">
-        <p>
-            Desenvolvido por João Mateus
+  <header>
+    <a href="index.html" class="HOME">
+      <img src="Imagem/soldorock-removebg-preview.png" alt="Logo da KILL THE SUN">
+    </a>
+    <nav>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <ul id="menu" class="menu">
+        <li><a href="index.html" title="Home">HOME</a></li>
+        <li><a href="sobrejogo.html" title="Sobre">SOBRE</a></li>
+        <li><a href="galeriadejogos.html" title="Galeria de jogos">GALERIA DE JOGOS</a></li>
+        <li><a href="contato.html" title="Contato">CONTATO</a></li>
+        <li><a href="jogar.html" title="Jogar">JOGAR</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="sobre">
+      <div class="container">
+        <h1>
+          <span class="faixa">
+            <i class="fas fa-play"></i>
+            JOGAR KILL THE SUN
+          </span>
+        </h1>
+
+        <!-- IFRAME DO JOGO -->
+        <iframe
+          id="jogo-frame"
+          src="jogo/KILLBETA7/index.html"
+          width="300"
+          height="300"
+          tabindex="0"
+          style="border: none;">
+        </iframe>
+
+        <p class="center">
+          <a href="KILLBETA7.zip" class="btn">⬇ Baixar jogo</a>
+          <a href="jogo/KILLBETA7/index.html" target="_blank" title="Abrir em Nova Aba" class="btn">▶ Abrir</a>
         </p>
-    </footer>
-</main>
-<script>
-    document.getElementById("menu-toggle").addEventListener("click", function () {
-document.getElementById("menu").classList.toggle("active");
-});
+      </div>
+    </section>
+  </main>
 
-</script>
+  <footer>
+    <img src="Imagem/soldorock2.png" alt="SIRIUS" class="SIRIUS">
+    <p>Desenvolvido por João Mateus Alcantara Dos Santos</p>
+  </footer>
+
+  <script>
+    document.getElementById("menu-toggle")
+      .addEventListener("click", () => {
+        document.getElementById("menu").classList.toggle("active");
+      });
+
+    
+    const iframe = document.getElementById("jogo-frame");
+    iframe.addEventListener("pointerdown", () => {
+      iframe.focus();
+    });
+    iframe.addEventListener("focus", () => {
+      document.body.style.overflow = "hidden";
+    });
+    iframe.addEventListener("blur", () => {
+      document.body.style.overflow = "auto";
+    });
+  </script>
 </body>
-
 </html>
+
       
