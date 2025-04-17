@@ -7,6 +7,12 @@
   <title>KILL THE SUN</title>
   <link href="Imagem/icono_assustado.png" rel="icon">
   <link href="css/style.css" rel="stylesheet">
+  <style>
+    html, body {
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+  </style>
 </head>
 
 <body>
@@ -35,8 +41,6 @@
             JOGAR KILL THE SUN
           </span>
         </h1>
-
-        <!-- IFRAME DO JOGO -->
         <iframe
           id="jogo-frame"
           src="jogo/KILLBETA7/index.html"
@@ -58,26 +62,24 @@
     <img src="Imagem/soldorock2.png" alt="SIRIUS" class="SIRIUS">
     <p>Desenvolvido por João Mateus Alcantara Dos Santos</p>
   </footer>
-
   <script>
     document.getElementById("menu-toggle")
       .addEventListener("click", () => {
         document.getElementById("menu").classList.toggle("active");
       });
-
-    
     const iframe = document.getElementById("jogo-frame");
     iframe.addEventListener("pointerdown", () => {
       iframe.focus();
     });
-    iframe.addEventListener("focus", () => {
-      document.body.style.overflow = "hidden";
-    });
-    iframe.addEventListener("blur", () => {
-      document.body.style.overflow = "auto";
-    });
+    document.addEventListener("keydown", function (e) {
+      const navKeys = ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", " "];
+      if (document.activeElement === iframe && navKeys.includes(e.key)) {
+        e.preventDefault();
+      }
+    }, { passive: false });
   </script>
 </body>
 </html>
+
 
       
