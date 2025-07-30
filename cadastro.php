@@ -53,3 +53,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <button type="submit">Cadastrar</button>
 </form>
 <a href="entre.php">Já tem conta? Faça login</a>
+<footer>
+    <img src="Imagem/soldorock2.png" alt="Solpagina" class="SIRIUS" />
+    <p>Desenvolvido por João Mateus Alcantara Dos Santos </p>
+  </footer>
+
+  <script>
+    document.getElementById("menu-toggle").addEventListener("click", function () {
+      document.getElementById("menu").classList.toggle("active");
+    });
+  </script>
