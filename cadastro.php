@@ -45,14 +45,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   }
 }
 ?>
+<div class="contato">
 <form method="POST">
   <h2>Cadastro</h2>
   <input type="text" name="nome" placeholder="Nome" required><br>
   <input type="email" name="email" placeholder="E-mail" required><br>
   <input type="password" name="senha" placeholder="Senha" required><br>
   <button type="submit">Cadastrar</button>
-</form>
-<a href="entre.php">Já tem conta? Faça login</a>
+  <a href="entre.php">Já tem conta? Faça login</a>
+  </form>
+</div>
 <footer>
     <img src="Imagem/soldorock2.png" alt="Solpagina" class="SIRIUS" />
     <p>Desenvolvido por João Mateus Alcantara Dos Santos </p>

@@ -1,27 +1,44 @@
- <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KILL THE SUN</title>
-  <link rel="icon" href="Imagem/icono_assustado.png" />
-  <link rel="stylesheet" href="css/style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KILL THE SUN</title>
+    <link href="Imagem/icono_assustado.png" rel="icon">
+    <link href="css/style.css" rel="stylesheet">
 </head>
- <header>
-    <a href="index.html" class="HOME">
-      <img src="Imagem/soldorock-removebg-preview.png" alt="Logo da KILL THE SUN" class="soldorock5" />
-    </a>
-    <div class="menu-toggle" id="menu-toggle">☰</div>
-    <nav>
-      <ul id="menu" class="menu">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="sobrejogo.html">SOBRE</a></li>
-        <li><a href="galeriadejogos.html">GALERIA DE JOGOS</a></li>
-        <li><a href="contato.html">CONTATO</a></li>
-        <li><a href="jogar.html">JOGAR</a></li>
-        <li><a href="cadastro.php">CADASTRO</a></li>
-        <li><a href="entre.php">ENTRAR</a></li>
-      </ul>
-    </nav>
-  </header>
+
+<body>
+    <header>
+        <a href="index.html" class="HOME">
+            <img src="Imagem/soldorock-removebg-preview.png" alt=Logo da KILL THE SUN>
+        </a>
+        <nav>
+        </a>
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+        <ul id="menu" class="menu">
+                <li>
+                    <a href="index.html" title="Home">
+                        HOME
+                    </a>
+                <li>
+                    <a href=sobrejogo.html title="Sobre">
+                        SOBRE
+                    </a>
+                <li>
+                    <a href=galeriadejogos.html title="Galeria de fotos">
+                        GALERIA DE JOGOS
+                    </a>
+                </li>
+                <a href="contato.html" title="Contato">
+                    CONTATO
+                </a>
+                <li>
+                    <a href="jogar.html"title="Jogar">
+                        JOGAR
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 <?php
 session_start();
 include 'conexao.php';
@@ -46,16 +63,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
-
+  <div class="contato">
 <form method="POST">
   <h2>Login</h2>
   <input type="email" name="email" placeholder="E-mail" required><br>
   <input type="password" name="senha" placeholder="Senha" required><br>
   <button type="submit">Entrar</button>
   <?php if (isset($erro)) echo "<p>$erro</p>"; ?>
-</form>
 <a href="Cadastro.php">Criar conta</a>
-
+</form>
+</div>
 <footer>
     <img src="Imagem/soldorock2.png" alt="Solpagina" class="SIRIUS" />
     <p>Desenvolvido por João Mateus Alcantara Dos Santos </p>
@@ -66,3 +83,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       document.getElementById("menu").classList.toggle("active");
     });
   </script>
+</body>
+</html>

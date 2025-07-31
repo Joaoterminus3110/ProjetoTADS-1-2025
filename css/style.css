@@ -72,6 +72,7 @@
     font-size: 20px;
   }
   
+  
   .paroalto {
     text-align: center;
     color: white;
@@ -151,6 +152,7 @@
     margin-bottom: 50px;
     margin-top: 50px;
 }
+
 .contato{
     form {
         max-width: 500px;
@@ -257,3 +259,8 @@
                   display: block;
                   margin: 0 auto;
               }
+              .capaimagem2 {
+                width: 250px;
+                height: 250px;
+                display: block;
+                margin: 0 auto;}
