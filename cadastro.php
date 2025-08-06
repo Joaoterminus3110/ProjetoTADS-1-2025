@@ -28,31 +28,30 @@
 include 'conexao.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  $nome = $_POST['nome'];
-  $email = $_POST['email'];
-  $senha = $_POST['senha'];
+    $nome  = $_POST['nome'];
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
+
+    // senha
+    $senha_hash = password_hash($senha, PASSWORD_DEFAULT);
+
+    // salva no banco
+    $stmt = $pdo->prepare(
+        "INSERT INTO usuario (nome, email, senha_hash)
+         VALUES (:nome, :email, :senha_hash)"
+    );
+
+    try {
+        $stmt->execute([
+            ':nome'       => $nome,
+            ':email'      => $email,
+            ':senha_hash' => $senha_hash,
+        ]);
+        echo "✅ Usuário cadastrado com sucesso! <a href='entre.php'>Fazer login</a>";
+    } catch (PDOException $e) {
+        echo "Erro: " . $e->getMessage();
+    }
 }
-
-  //senha
-  $senha_hash = password_hash($senha, PASSWORD_DEFAULT);
-
-  //salva no banco
-$stmt = $pdo->prepare(
-    "INSERT INTO usuario (nome, email, senha_hash)
-     VALUES (:nome, :email, :senha_hash)"
-);
-
-try {
-    $stmt->execute([
-        ':nome'       => $nome,
-        ':email'      => $email,
-        ':senha_hash' => $senha_hash
-    ]);
-    echo "✅ Usuário cadastrado com sucesso! <a href='login.php'>Fazer login</a>";
-} catch (PDOException $e) {
-    echo "Erro: " . $e->getMessage();
-}
-
 ?>
 <div class="contato">
 <form method="POST">
