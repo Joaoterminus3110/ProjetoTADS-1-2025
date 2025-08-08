@@ -29,22 +29,24 @@ session_start();
 include 'conexao.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  $email = $_POST['email'];
-  $senha_digitada = $_POST['senha'];
+  $email = $_POST['email'] ?? '';
+  $senha_digitada = $_POST['senha'] ?? '';
 
 
-  $stmt = $pdo->prepare("SELECT * FROM usuarios WHERE email = ?");
+  $stmt = $pdo->prepare("SELECT * FROM usuario WHERE email = ?");
   $stmt->execute([$email]);
   $usuario = $stmt->fetch();
 
   
-  if ($usuario && password_verify($senha_digitada, $usuario['senha_hash'])) {
-    $_SESSION['usuario'] = $usuario['nome'];
-    header("Location: restrito/jogar.php");
-    exit;
-  } else {
-    $erro = "❌ E-mail ou senha incorretos.";
-  }
+     if ($usuario && password_verify($senha_digitada, $usuario['senha_hash'])) {
+        
+        $_SESSION['user_id']   = $usuario['id'];
+        $_SESSION['user_name'] = $usuario['nome'];
+        header('Location: jogar.html');
+        exit;
+    } else {
+        $erro = "E-mail ou senha inválidos.";
+    }
 }
 ?>
 
