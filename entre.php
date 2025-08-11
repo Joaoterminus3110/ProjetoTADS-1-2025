@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
         $_SESSION['user_id']   = $usuario['id'];
         $_SESSION['user_name'] = $usuario['nome'];
-        header('Location: jogar.html');
+        header('Location: jogar.php');
         exit;
     } else {
         $erro = "E-mail ou senha inválidos.";

@@ -1,5 +1,7 @@
  
- 
+ <?php
+session_start();
+?>
  <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -48,9 +50,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             ':email'      => $email,
             ':senha_hash' => $senha_hash,
         ]);
-        echo "✅ Usuário cadastrado com sucesso! <a href='entre.php'>Fazer login</a>";
+        $_SESSION['user_id'] = $nome;
+        echo "<p class='msg'>✅ Usuário cadastrado com sucesso! <a href='entre.php'>Fazer login</a></p>";
     } catch (PDOException $e) {
         echo "Erro: " . $e->getMessage();
+        unset($_SESSION['user_id']);
     }
 }
 ?>
