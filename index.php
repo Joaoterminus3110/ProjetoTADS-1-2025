@@ -15,11 +15,11 @@
     <div class="menu-toggle" id="menu-toggle">☰</div>
     <nav>
       <ul id="menu" class="menu">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="sobrejogo.html">SOBRE</a></li>
-        <li><a href="galeriadejogos.html">GALERIA DE JOGOS</a></li>
-        <li><a href="contato.html">CONTATO</a></li>
-        <li><a href="jogar.html">JOGAR</a></li>
+        <li><a href="index.php">HOME</a></li>
+        <li><a href="sobrejogo.php">SOBRE</a></li>
+        <li><a href="galeriadejogos.php">GALERIA DE JOGOS</a></li>
+        <li><a href="contato.php">CONTATO</a></li>
+        <li><a href="jogar.php">JOGAR</a></li>
         <li><a href="cadastro.php">CADASTRO</a></li>
         <li><a href="entre.php">ENTRAR</a></li>
       </ul>
@@ -30,7 +30,7 @@
     <div class="paroalto">
       <h1>BEM-VINDO AO JOGO DE PLATAFORMA INSPIRADO EM UM LIVRO DE SUCESSO!</h1>
       <h1>CONHEÇA KILL THE SUN</h1>
-      <h1><a href="sobrejogo.html" title="Sobre" class="SAIBA" style="color: blue;">SAIBA MAIS SOBRE</a></h1>
+      <h1><a href="sobrejogo.php" title="Sobre" class="SAIBA" style="color: blue;">SAIBA MAIS SOBRE</a></h1>
       <img src="Imagem/solopng.png" alt="solvermelho" class="SOLVERM" />
     </div>
 

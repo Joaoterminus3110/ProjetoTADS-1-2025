@@ -14,20 +14,19 @@
     }
   </style>
 </head>
-
 <body>
- <header>
-    <a href="index.html" class="HOME">
+  <header>
+    <a href="index.php" class="HOME">
       <img src="Imagem/soldorock-removebg-preview.png" alt="Logo da KILL THE SUN" class="soldorock5" />
     </a>
     <div class="menu-toggle" id="menu-toggle">☰</div>
     <nav>
       <ul id="menu" class="menu">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="sobrejogo.html">SOBRE</a></li>
-        <li><a href="galeriadejogos.html">GALERIA DE JOGOS</a></li>
-        <li><a href="contato.html">CONTATO</a></li>
-        <li><a href="jogar.html">JOGAR</a></li>
+        <li><a href="index.php">HOME</a></li>
+        <li><a href="sobrejogo.php">SOBRE</a></li>
+        <li><a href="galeriadejogos.php">GALERIA DE JOGOS</a></li>
+        <li><a href="contato.php">CONTATO</a></li>
+        <li><a href="jogar.php">JOGAR</a></li>
         <li><a href="cadastro.php">CADASTRO</a></li>
         <li><a href="entre.php">ENTRAR</a></li>
       </ul>
@@ -45,7 +44,7 @@
         </h1>
         <iframe
           id="jogo-frame"
-          src="jogo/KILLBETA7/index.html"
+          src="jogo/KILLBETA7/index.php"
           width="300"
           height="300"
           tabindex="0"
@@ -54,7 +53,7 @@
 
         <p class="center">
           <a href="KILLBETA7.zip" class="btn">⬇ Baixar jogo</a>
-          <a href="jogo/KILLBETA7/index.html" target="_blank" title="Abrir em Nova Aba" class="btn">▶ Abrir</a>
+          <a href="jogo/KILLBETA7/index.php" target="_blank" title="Abrir em Nova Aba" class="btn">▶ Abrir</a>
         </p>
       </div>
     </section>
