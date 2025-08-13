@@ -51,9 +51,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             ':senha_hash' => $senha_hash,
         ]);
         $_SESSION['user_id'] = $nome;
-        echo "<p class='msg'>✅ Usuário cadastrado com sucesso! <a href='entre.php'>Fazer login</a></p>";
+        echo "<button class='btn btn-danger'>>✅ Usuário cadastrado com sucesso! <a href='entre.php'>Fazer login</a></button>";
+       
     } catch (PDOException $e) {
-        echo "Erro: " . $e->getMessage();
+        echo "<p class='text-warning'>Erro: " . $e->getMessage();
         unset($_SESSION['user_id']);
     }
 }

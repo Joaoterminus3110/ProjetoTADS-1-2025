@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header('Location: jogar.php');
         exit;
     } else {
-        $erro = "E-mail ou senha inválidos.";
+       $erro =" <button class='btn btn-danger'>Email ou senha inválidos.</button>";
     }
 }
 ?>
