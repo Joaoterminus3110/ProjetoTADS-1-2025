@@ -27,6 +27,16 @@ session_start();
       </ul>
     </nav>
   </header>
+<div class="contato">
+<form method="POST">
+  <h2>Cadastro</h2>
+  <input type="text" name="nome" placeholder="Nome" required><br>
+  <input type="email" name="email" placeholder="E-mail" required><br>
+  <input type="password" name="senha" placeholder="Senha" required><br>
+  <button type="submit">Cadastrar</button>
+  <a href="entre.php">Já tem conta? Faça login</a>
+  </form>
+</div>
 <?php
 include 'conexao.php';
 
@@ -43,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         "INSERT INTO usuario (nome, email, senha_hash)
          VALUES (:nome, :email, :senha_hash)"
     );
-
+        
     try {
         $stmt->execute([
             ':nome'       => $nome,
@@ -51,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             ':senha_hash' => $senha_hash,
         ]);
         $_SESSION['user_id'] = $nome;
-        echo "<button class='btn btn-danger'>>✅ Usuário cadastrado com sucesso! <a href='entre.php'>Fazer login</a></button>";
+        echo "<button class='btn btn-danger'>✅ Usuário cadastrado com sucesso! <a href='entre.php'>Fazer login</a></button>";
        
     } catch (PDOException $e) {
         echo "<p class='text-warning'>Erro: " . $e->getMessage();
@@ -59,16 +69,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 ?>
-<div class="contato">
-<form method="POST">
-  <h2>Cadastro</h2>
-  <input type="text" name="nome" placeholder="Nome" required><br>
-  <input type="email" name="email" placeholder="E-mail" required><br>
-  <input type="password" name="senha" placeholder="Senha" required><br>
-  <button type="submit">Cadastrar</button>
-  <a href="entre.php">Já tem conta? Faça login</a>
-  </form>
-</div>
 <footer>
     <img src="Imagem/soldorock2.png" alt="Solpagina" class="SIRIUS" />
     <p>Desenvolvido por João Mateus Alcantara Dos Santos </p>

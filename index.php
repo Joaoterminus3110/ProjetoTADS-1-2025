@@ -33,9 +33,9 @@ session_start();
 
   <main>
     <div class="paroalto">
-      <h1>BEM-VINDO AO JOGO DE PLATAFORMA INSPIRADO EM UM LIVRO DE SUCESSO!</h1>
-      <h1>CONHEÇA KILL THE SUN</h1>
-      <h1><a href="sobrejogo.php" title="Sobre" class="SAIBA" style="color: blue;">SAIBA MAIS SOBRE</a></h1>
+      <<h3 styly="color:red">BEM-VINDO AO JOGO DE PLATAFORMA INSPIRADO EM UM LIVRO DE SUCESSO!</h3> --> -->
+      <h3>CONHEÇA KILL THE SUN</h3>
+      <h1><a href="sobrejogo.php" title="Sobre" class="SAIBA" style="color: red;">SAIBA MAIS SOBRE</a></h1>
       <img src="Imagem/solopng.png" alt="solvermelho" class="SOLVERM" />
     </div>
 

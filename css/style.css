@@ -62,21 +62,25 @@
     text-align: center;
     color: white;
     text-decoration: underline;
+    font-size: 20px;
   }
-  
   h1 {
-    font-size: 24px;
+    font-size: 10px;
   }
   
   h2 {
-    font-size: 20px;
+    font-size: 10px;
   }
+  .h3 {
+    font-size: 20px;
   
+  }
   
   .paroalto {
     text-align: center;
     color: white;
     padding: 20px;
+    font-size: 10px;
   }
   
   p {
@@ -131,17 +135,7 @@
       z-index: 1000;
     }
   
-    h1 {
-      font-size: 20px;
-    }
   
-    h2 {
-      font-size: 18px;
-    }
-  
-    p {
-      font-size: 16px;
-    }
   }
   .paroalto2 {
     text-align: center;
