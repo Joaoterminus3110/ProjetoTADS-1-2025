@@ -5,12 +5,12 @@ session_start();
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   <title>KILL THE SUN</title>
-  <link rel="icon" href="Imagem/icono_assustado.png" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="icon" href="Imagem/icono_assustado.png" >
+  <link rel="stylesheet" href="css/style.css" >
+  <link rel="stylesheet" href="css/bootstrap.min.css" >
 </head>
 <body>
   <header>
@@ -23,18 +23,20 @@ session_start();
         <li><a href="index.php">HOME</a></li>
         <li><a href="sobrejogo.php">SOBRE</a></li>
         <li><a href="galeriadejogos.php">GALERIA DE JOGOS</a></li>
+        <li><a href="Jogosatuaisefuturos.php"> NOSSOS JOGOS </a></li>
         <li><a href="contato.php">CONTATO</a></li>
         <li><a href="jogar.php">JOGAR</a></li>
         <li><a href="cadastro.php">CADASTRO</a></li>
         <li><a href="entre.php">ENTRAR</a></li>
+        <li><a href="Jogosatuaisefuturos.php">  </a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <div class="paroalto">
-      <<h3 styly="color:red">BEM-VINDO AO JOGO DE PLATAFORMA INSPIRADO EM UM LIVRO DE SUCESSO!</h3> --> -->
-      <h3>CONHEÇA KILL THE SUN</h3>
+      <h2 style="color:black">BEM-VINDO AO JOGO DE PLATAFORMA INSPIRADO EM UM LIVRO DE SUCESSO!</h2>
+      <h2 style="color:black">CONHEÇA KILL THE SUN</h3>
       <h1><a href="sobrejogo.php" title="Sobre" class="SAIBA" style="color: red;">SAIBA MAIS SOBRE</a></h1>
       <img src="Imagem/solopng.png" alt="solvermelho" class="SOLVERM" />
     </div>
