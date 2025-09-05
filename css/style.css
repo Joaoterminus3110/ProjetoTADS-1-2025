@@ -267,9 +267,9 @@ iframe {
   display: block;
   margin: 0 auto;
 }
-.CAPA {
-  width: 300px;
+.capa {
+  width: 1300px;
   height: 300px;
-  display: block;
-  margin: 0 auto;
+  display: inline;
+  margin: 20px;
 }
