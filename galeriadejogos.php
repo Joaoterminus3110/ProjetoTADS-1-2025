@@ -18,10 +18,12 @@
         <li><a href="index.php">HOME</a></li>
         <li><a href="sobrejogo.php">SOBRE</a></li>
         <li><a href="galeriadejogos.php">GALERIA DE JOGOS</a></li>
+        <li><a href="Jogosatuaisefuturos.php"> NOSSOS JOGOS </a></li>
         <li><a href="contato.php">CONTATO</a></li>
         <li><a href="jogar.php">JOGAR</a></li>
         <li><a href="cadastro.php">CADASTRO</a></li>
         <li><a href="entre.php">ENTRAR</a></li>
+
       </ul>
     </nav>
   </header>

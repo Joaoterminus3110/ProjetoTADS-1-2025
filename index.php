@@ -28,8 +28,6 @@ session_start();
         <li><a href="jogar.php">JOGAR</a></li>
         <li><a href="cadastro.php">CADASTRO</a></li>
         <li><a href="entre.php">ENTRAR</a></li>
-        <li><a href="Jogosatuaisefuturos.php">  </a></li>
-      </ul>
     </nav>
   </header>
 
