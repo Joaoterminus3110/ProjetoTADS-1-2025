@@ -20,7 +20,7 @@ session_start();
         <li><a href="index.php">HOME</a></li>
         <li><a href="sobrejogo.php">SOBRE</a></li>
         <li><a href="galeriadejogos.php">GALERIA DE JOGOS</a></li>
-        <li><a href="Jogosatuaisefuturos.php">NOSSOS JOGOS</a></li>
+        <li><a href="Jogosatuaisefuturos.php">NOSSOS JOGO</a></li>
         <li><a href="contato.php">CONTATO</a></li>
         <li><a href="jogar.php">JOGAR</a></li>
         <li><a href="cadastro.php">CADASTRO</a></li>
@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // salva no banco
     $stmt = $pdo->prepare(
-        "INSERT INTO usuario (nome, email, senha_hash)
+        "INSERT INTO usuarios (nome, email, senha_hash)
          VALUES (:nome, :email, :senha_hash)"
     );
         
@@ -65,7 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo "<button class='btn btn-danger'>✅ Usuário cadastrado com sucesso! <a href='entre.php'>Fazer login</a></button>";
        
     } catch (PDOException $e) {
-        echo "<p class='text-warning'>Erro: " . $e->getMessage();
+        echo "<p class='text-warning'>Erro: " . " (O usuário já existe ou o email já está cadastrado)</p>";
         unset($_SESSION['user_id']);
     }
 }

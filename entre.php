@@ -33,15 +33,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $senha_digitada = $_POST['senha'] ?? '';
 
 
-  $stmt = $pdo->prepare("SELECT * FROM usuario WHERE email = ?");
+  $stmt = $pdo->prepare("SELECT * FROM usuarios WHERE email = ?");
   $stmt->execute([$email]);
-  $usuario = $stmt->fetch();
+  $usuarios = $stmt->fetch();
 
   
-     if ($usuario && password_verify($senha_digitada, $usuario['senha_hash'])) {
+     if ($usuarios && password_verify($senha_digitada, $usuarios['senha_hash'])) {
         
-        $_SESSION['user_id']   = $usuario['id'];
-        $_SESSION['user_name'] = $usuario['nome'];
+        $_SESSION['user_id']   = $usuarios['id'];
+        $_SESSION['user_name'] = $usuarios['nome'];
         header('Location: jogar.php');
         exit;
     } else {
