@@ -39,7 +39,18 @@ session_start();
   </form>
 </div>
 <?php
-include 'conexao.php';
+require_once __DIR__ . '/conexao.php'; 
+
+$pdo = Db::conn();                    
+
+
+$stmt = $pdo->query("SELECT * FROM usuarios");
+$usuarios = $stmt->fetchAll();
+
+foreach ($usuarios as $u) {
+    echo $u['nome'] . "<br>";
+}
+
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nome  = $_POST['nome'];

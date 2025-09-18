@@ -25,8 +25,18 @@
     </nav>
   </header>
 <?php
-session_start();
-include 'conexao.php';
+session_start();                       
+require_once __DIR__ . '/conexao.php'; 
+
+$pdo = Db::conn();                    
+
+$stmt = $pdo->query("SELECT * FROM usuarios");
+$usuarios = $stmt->fetchAll();
+
+foreach ($usuarios as $u) {
+    echo $u['nome'] . "<br>";
+}
+
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $email = $_POST['email'] ?? '';
